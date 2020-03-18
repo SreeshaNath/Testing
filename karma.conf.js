@@ -56,13 +56,13 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'Firefox', 'Safari', 'ChromeHeadless'],
+    browsers: ['Chrome', 'Firefox', 'Safari'],
     // you can define custom flags
     customLaunchers: {
-      ChromeHeadlessNoSandbox: {
-        base: 'ChromeHeadless',
-        flags: ['--no-sandbox']
-      }
+      Chrome_travis_ci: {
+            base: 'Chrome',
+            flags: ['--no-sandbox']
+        }
     },
 
     // Continuous Integration mode
@@ -75,6 +75,6 @@ module.exports = function(config) {
   });
   // Detect if this is TravisCI running the tests and tell it to use chromium
   if(process.env.TRAVIS){
-      config.browsers = ['ChromeHeadlessNoSandbox'];
+      config.browsers = ['Chrome_travis_ci'];
   }
 }
