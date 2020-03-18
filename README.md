@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/SreeshaNath/Testing.svg?branch=master)](https://travis-ci.org/SreeshaNath/Testing)
+
 # Movie Vote
 
 
@@ -23,5 +25,9 @@ I created some very basic KarmaJS tests to test the basic functionality of the M
 ## Travis CI
 
 I wanted to show a very basic, and working, TravisCI instance where we could run the tests automatically. See the badge above for a link to my instance.
+
+## Credits
+
+https://github.com/arroyolabs-blog/movie-vote
 
 
